@@ -1,0 +1,257 @@
+﻿<!doctype html>
+<!-- to print to pdf, open in Chrome and add ?print-pdf to url -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Myths and facts on migration in Europe and the global context</title>
+		<meta name="description" content="Slides for the EISS Conference 2015">
+		<meta name="author" content="Nikola Sander">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		
+		<!-- Selected Style: Nikola -->
+		<link rel="stylesheet" href="css/theme/nikola.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes '?print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );}
+		</script>
+		<!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]-->
+
+		<!-- d3 -->
+		<link href="d3/dist/app-v1.css" rel="stylesheet" media="all">
+		<script src="d3/dist/app-v1.js"></script>
+
+		<!--orange colour: #ff9a15 -->
+		<!---white colour: #F4EBCE -->
+			
+	</head>
+	<body>
+	<div class="reveal">
+		<div class="slides">
+		<!-- SLIDES -->		
+		
+			<section data-background="images/science_fig4.png" data-background-size="contain">
+<!--<br><br><br><br><br><br>-->
+				<div style="background-color: rgba(0, 0, 0, 0.6); width:80%; margin:0 auto; text-align: center">
+				<h4 style="text-align: center; font-size: 180%; font-weight: bold">Myths and facts on migration in Europe and the global context</h4>
+				<h5 style="text-align: center;font-size: 130%">Nikola Sander<br> Vienna Institute of Demography</h5>		
+				</div>
+			</section>
+
+			<section data-background="images/human-journey.png" data-background-size="contain">	
+				<div style="background-color: rgba(0, 0, 0, 0.65)">
+				<h3 style="text-align: center">People have migrated for 60,000 years</h3>
+				<p style="text-align: center"><a href="http://blog.education.nationalgeographic.com/2015/04/24/dna-reveals-undiscovered-ancient-migration-route/" target="_blank">National Geographic Genographic Project</a></p>
+				</div>
+			</section>		
+
+			<section>		
+				<h2>Why people migrate</h2>
+				<ol>
+					<li>economic (eg higher wages)</li>
+					<li>family (eg marriage)</li>
+					<li>housing (eg larger flat)</li>
+					<li>education (eg attending university)
+					<li>violent conflict</li>
+				</ol>
+			</section>		
+
+			<section>	
+				<h2>A rising tide of mass migration?</h2>
+				<br>
+				<p>For every 1,000 people worldwide, how move over 5-year periods?</p>
+				<img src="images/thinking-frog-guess.png" width="220" style="margin-left: 40%">
+			</section>
+
+			<section>	
+				<h3 style="font-size: 185%">Migration can be defined in many different ways</h3>
+				<br>
+				<img src="images/apple-orange.png" width="370" style="margin-left: 30%">
+			</section>
+
+			<section>	
+				<h3 style="font-size: 185%">Two types of migration data:<br> flows & stocks</h3>
+				<br>
+				<img src="images/unflow-2008-cover.png" width="370" style="margin-left: 10%">
+				<img src="images/unstock-2012-cover.png" width="348" style="margin-left: 5%">
+			</section>
+
+			<section>
+				<h3 style="font-size: 185%">Our estimates: <em>0.6%</em> of the world's population move over 5-year periods</h3>
+				<img src="images/global-intensity.png"  width="650">
+				<p style="font-size: 140%">Abel & Sander (2014)<br><a href="http://www.sciencemag.org/content/343/6178/1520" target="_blank">Quantifying Global International Migration Flows</a><br> <i>Science</i>, vol. 343: 1520-1522.</p> 				
+			</section>	
+
+			<section data-background="images/Table_big1.png" data-background-size="contain">	
+				<h3 style="text-align:center; color:#F4EBCE;background-color:rgba(0, 0, 0, 0.5)">How to explore a matrix of flows<br> between 196 countries?</h3>
+			</section>	
+
+			<section data-background="images/flowmap-adam.png" data-background-size="contain">	
+				<br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<h3 style="text-align:center">A traditional migration flow map</h3>
+			</section>	
+			
+			<section data-background="images/circos.png" data-background-size="contain">	
+				<h3 style="text-align:center; color:#000;background-color:rgba(255, 255,255, 0.8)">Circos: a source of inspiration</h3>
+			</section>
+
+			<section data-background="images/science_fig4_step2.png" data-background-size="contain">
+			<p style="font-size: 180%;width:70%; margin:0 auto; text-align: center; color:#ff9a15">Circular migration plot</p> 
+			<br>
+			<p style="width:60%; margin:0 auto; text-align: center">Segment length shows a region's migration volume in millions.</p> 
+			<br>
+			<p style="width:60%; margin:0 auto; text-align: center">Flows have the same colour as their origin.</p>
+			</section>
+
+			<section data-background="images/science_fig4.png" data-background-size="contain">
+			</section>
+
+			<!-- Interactive 	-->
+			<section style="margin-top:-108px">				
+			  <nav>
+			    <div id="timeline"></div>
+			  </nav>
+			  <div id="diagram"></div>	
+			  	  <script>
+					(function() {
+					  var datafile = 'd3/migrations.json';
+					  var aLittleBit = Math.PI / 100000;
+					  d3.json(datafile, function(data) {
+						var now = 1990;
+						var chart = Globalmigration.chart(data, {
+						  element: '#diagram',
+						  now: now,
+						  animationDuration: 1200,
+						  margin: 125,
+						  arcPadding: 0.04,
+						  layout: {
+							threshold: 50000,
+							labelThreshold: 5000,
+							colors: 'cd3d08 ec8f00 6dae29 683f92 b60275 2058a5 00a592 009d3c 378974 ffca00'.split(' ').map(function(c) { return '#' + c; })
+						  }
+						});
+						Globalmigration.timeline(chart, {
+						  now: now,
+						  element: '#timeline'
+						});
+						chart.draw(now);
+					  });
+					})();
+				  </script>	
+			</section>
+
+			<section data-background="images/datasheets_both.png" data-background-size="contain">	
+			</section>		
+			
+			<section data-background="images/global-migration.png" data-background-size="contain">
+			<br><br><br>
+				<h3 style="color:#333;text-align:center; font-size: 110%">www.global-migration.info</h3>
+			</section>			
+
+			<section>
+				<h2 style="text-align:center; font-size: 200%">Migration in Europe</h2>
+			</section>
+
+			
+			<section>
+				<h2 style="font-size: 185%">A data jungle</h2>
+				<p>Population registers capture immigration and emigration through self-declaration</p>
+				<p><em>2 problems: </em>
+				<ul>
+				<li>> lack of incentives for deregistration</li>
+				<li>> the time criterion used to identify migrants is based on intended duration of stay and varies from 3 days to 1 year</li>
+				</ul>
+				</p>
+				<p>Research aims at harmonising register-based data, eg IMEM Project (Southampton)</p>
+			</section>
+
+			<section data-background="images/median-2008.png" data-background-size="contain">
+			<p style="font-size: 135%;width:70%; margin:0 auto; text-align: center">IMEM,<br> median estimate,<br> 2008</p> 
+			</section>
+
+			<section>	
+			<h2 style="text-align:center; font-size: 185%">What about the future?</h2>
+				<h3 style="font-size: 185%">Will sub-Saharan population growth result in mass emigration to Europe?</h3>
+			</section>
+
+			<section>
+				<h3 style="font-size: 185%">The global migration system <br> in 2005-10 and in 2055-60</h3>
+				<img src="images/projections-circos.png"  width="100%">
+				<h3 style="font-size: 90%;text-align:center;color:#C3BCA5;margin: 0px 0 0 0">* iterative proportional fitting was used to estimate flows from projected numbers of in-migrants and out-migrants</h3>
+			</section>
+
+			<section>	
+				<h3 style="font-size: 185%">Refugee flows triggered by violent conflict make projecting international migration difficult.</h3>
+			</section>
+
+			<section data-background="images/refugees-2014.png" data-background-size="contain">
+			<div style="width:75%; margin:0 auto; text-align: center">
+			<p style="font-size: 185%;width:70%; margin:0 auto; text-align: center">The global flow<br> of refugees in 2014</p> 
+			<p style="font-size: 110%;width:70%; margin:0 auto; text-align: center"><em>www.global-refugees.info</em></p> 
+			</div>
+			</section>
+
+			<section>
+				<h2 style="font-size: 185%">Migrants or refugees?</h2>
+				<p>Refugees protected by international law (1951 Convention)</p>
+				<p>Dublin III protocol</p>
+				<p>Asylum application only from inside the EU</p>
+				<p>Distribution of refugees within the EU</p>
+				<p>A common immigration policy?</p>
+			</section>
+
+		
+		<!-- END SLIDES -->		
+		</div>
+	</div>
+	
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+
+	<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				margin: 0.1,
+				controls: true,
+				progress: false,
+				history: false,
+				center: true,
+				slideNumber: true,
+				keyboard: true,
+				overview: true,
+				touch: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+	</script>
+	</div>
+
+</body>
+</html>
